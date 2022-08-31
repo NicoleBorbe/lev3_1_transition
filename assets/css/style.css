@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    position: relative;
+    background-color: lightgray;
+    height: 155px;
+    width: 100%;
+}
+.rosa {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-color: #d881b3;
+    font-size: 20px;
+    left:0;
+    transition: 1s;
+   
+}
+.blau {
+    position: absolute;
+    background-color: #5491b2;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-left: 250px;
+    margin-top: 75px;
+    transition: 2s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+    left:0;
+    
+}
+.rosa:active {
+left:107px;
+}
+.rosa:active+.blau {
+    left:75%;
+}
